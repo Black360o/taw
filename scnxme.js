@@ -75,7 +75,7 @@
     </main>
     <canvas id="background">
 
-<script src="bowser.min.js"></script>
+<script src="scnxme-min.js"></script>
 
 <script>
 // drawing
