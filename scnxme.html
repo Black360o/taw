@@ -1,0 +1,71 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<title>scenexe.io walls and gates editor</title>
+<style type="text/css">
+*{
+box-sizing:border-box;
+}
+#c{
+position:fixed;
+top:0;
+left:0;
+outline:none;
+margin:0;
+padding:0;
+}
+#info{
+position:fixed;
+top:10px;
+left:10px;
+pointer-events:none;
+font-family:Ubuntu,sans-serif;
+font-size:20px;
+padding:0;
+margin:0;
+user-select:none;
+-moz-user-select:none;
+-webkit-user-select:none;
+}
+#ei{
+position:fixed;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background-color:rgba(0,0,0,.75);
+border-radius:5px;
+}
+.cell{
+margin:0;
+width:100%;
+height:100%;
+display:block;
+}
+td{
+padding:0;
+}
+input,select,option,textarea,.extras{
+pointer-events:auto;
+font-family:Ubuntu,sans-serif;
+font-size:20px;
+padding:0;
+}
+.extras{
+color:#FFF;
+}
+a{
+color:#0FF;
+}
+</style>
+</head>
+<body>
+<canvas id="c" tabindex="0"></canvas>
+<pre id="info"></pre>
+<table id="ei" hidden>
+<tbody><tr><td colspan="3"><select class="cell" id="chooser"><option value="walls">walls</option><option value="gates">gates</option><option value="gatesrad">gates (radians angle)</option><option value="all">all (for this program)</option><option value="scratch">https://scratch.mit.edu/projects/645552149/ (only walls)</option></select></td></tr>
+<tr><td><input id="import" class="cell" type="button" value="↑"></td><td><input id="export" class="cell" type="button" value="↓"></td><td><input id="close" class="cell" type="button" value="×"></td></tr>
+<tr><td colspan="3"><textarea id="code" class="cell" rows="15" cols="45"></textarea></td></tr>
+<tr><td colspan="3" class="extras"><nav>links: <a href="https://scenexeio.fandom.com/wiki/Test_Server_Commands#Advanced_Commands" rel="noreferrer" target="_blank">wiki</a>, <a href="https://scratch.mit.edu/projects/645552149/" rel="noreferrer" target="_blank">scratch walls editor</a>, <a href="./img2walls.html" rel="noreferrer" target="_blank">img2walls</a>, <a href="./img2body.html" rel="noreferrer" target="_blank">img2body</a>, <a href="./img2weapon.html" rel="noreferrer" target="_blank">img2weapon</a>, <a href="./testfix.html" rel="noreferrer" target="_blank">testfix</a></nav></td></tr>
+</tbody></table>
+<script type="application/javascript" src="scnxme.js"></script>
+
+</body></html>
